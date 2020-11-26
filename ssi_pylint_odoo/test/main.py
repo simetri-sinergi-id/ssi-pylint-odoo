@@ -11,7 +11,7 @@ from cProfile import Profile
 
 from pylint.lint import Run
 
-from pylint_odoo import misc
+from ssi_pylint_odoo import misc
 
 EXPECTED_ERRORS = {
     'api-one-deprecated': 4,
@@ -94,7 +94,7 @@ class MainTest(unittest.TestCase):
         with open(dummy_cfg, "w") as f_dummy:
             f_dummy.write("")
         self.default_options = [
-            '--load-plugins=pylint_odoo', '--reports=no', '--msg-template='
+            '--load-plugins=ssi_pylint_odoo', '--reports=no', '--msg-template='
             '"{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}"',
             '--output-format=colorized', '--rcfile=%s' % os.devnull,
         ]
@@ -118,7 +118,7 @@ class MainTest(unittest.TestCase):
         sys.path = list(self.sys_path_origin)
         test = self._testMethodName
         prefix = os.path.expanduser(os.environ.get('PYLINT_ODOO_STATS',
-                                    '~/pylint_odoo_cprofile'))
+                                    '~/ssi_pylint_odoo_cprofile'))
         fstats = prefix + '_' + test + '.stats'
         if test != 'test_10_path_dont_exist':
             self.profile.dump_stats(fstats)

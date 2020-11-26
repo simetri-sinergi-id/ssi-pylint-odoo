@@ -138,7 +138,7 @@ Enable custom checks for Odoo modules.
 Install
 -------
 
-``# pip install --upgrade git+https://github.com/oca/pylint-odoo.git``
+``# pip install --upgrade git+https://github.com/simetri-sinergi-id/ssi-pylint-odoo.git``
 
 Or
 
@@ -147,13 +147,13 @@ Or
 Usage
 -----
 
-``pylint --load-plugins=pylint_odoo -e odoolint ...``
+``pylint --load-plugins=ssi_pylint_odoo -e odoolint ...``
 
 Example to test just odoo-lint case:
 
 ``touch {ADDONS-PATH}/__init__.py``
 
-``pylint --load-plugins=pylint_odoo -d all -e odoolint {ADDONS-PATH}``
+``pylint --load-plugins=ssi_pylint_odoo -d all -e odoolint {ADDONS-PATH}``
 
 If you have external files you can add them in ``examples`` folder to skip.
 
@@ -206,9 +206,9 @@ This skip only work with the name of the check, not work with the name of check
 The position of the comment it is not relative to the line that throw the check
 
 
-.. |Build Status| image:: https://travis-ci.org/OCA/pylint-odoo.svg?branch=master
-   :target: https://travis-ci.org/OCA/pylint-odoo
-.. |Coverage Status| image:: https://coveralls.io/repos/OCA/pylint-odoo/badge.svg?branch=master&service=github
-   :target: https://coveralls.io/github/OCA/pylint-odoo?branch=master
-.. |Pypi Package| image:: https://img.shields.io/pypi/v/pylint-odoo.svg
-   :target: https://pypi.python.org/pypi/pylint-odoo
+.. |Build Status| image:: https://travis-ci.com/simetri-sinergi-id/ssi-pylint-odoo.svg?branch=master
+   :target: https://travis-ci.com/simetri-sinergi-id/ssi-pylint-odoo
+.. |Coverage Status| image:: https://coveralls.io/repos/simetri-sinergi-id/ssi-pylint-odoo/badge.svg?branch=master&service=github
+   :target: https://coveralls.io/github/simetri-sinergi-id/ssi-pylint-odoo?branch=master
+.. |Pypi Package| image:: https://img.shields.io/pypi/v/ssi-pylint-odoo.svg
+   :target: https://pypi.python.org/pypi/ssi-pylint-odoo

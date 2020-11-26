@@ -2,7 +2,7 @@
 
 [report]
 include =
-    pylint_odoo/*
+    ssi_pylint_odoo/*
 
 omit =
     */test_repo/*
