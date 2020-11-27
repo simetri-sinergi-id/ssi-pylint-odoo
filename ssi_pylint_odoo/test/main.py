@@ -312,7 +312,7 @@ class MainTest(unittest.TestCase):
 
         # Testing deprecated attribute
         extra_params[0] = ('--manifest_required_author='
-                           'Odoo Community Association (OCA)')
+                           'PT. Simetri Sinergi Indonesia')
         pylint_res = self.run_pylint(self.paths_modules, extra_params)
         real_errors = pylint_res.linter.stats['by_msg']
         expected_errors_deprecated = {

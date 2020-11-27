@@ -234,7 +234,7 @@ ODOO_MSGS = {
 }
 
 DFTL_MANIFEST_REQUIRED_KEYS = ['license']
-DFTL_MANIFEST_REQUIRED_AUTHORS = ['Odoo Community Association (OCA)']
+DFTL_MANIFEST_REQUIRED_AUTHORS = ['PT. Simetri Sinergi Indonesia']
 DFTL_MANIFEST_DEPRECATED_KEYS = ['description']
 DFTL_LICENSE_ALLOWED = [
     'AGPL-3', 'GPL-2', 'GPL-2 or any later version',
